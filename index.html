@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Learning Platform</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        #categories {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .category {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tech Learning Platform</h1>
+
+    <div id="categories">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+        </ul>
+    </div>
+
+    <div id="java" class="category">
+        <h2>Java Questions</h2>
+        <ul>
+            <li>What is the difference between JDK and JRE?</li>
+            <li>Explain the concept of OOP in Java.</li>
+            <!-- Add more Java questions here -->
+        </ul>
+        <button onclick="submitAnswer('java')">Submit Answer</button>
+    </div>
+
+    <div id="javascript" class="category">
+        <h2>JavaScript Questions</h2>
+        <ul>
+            <li>What is a closure in JavaScript?</li>
+            <li>Explain the event delegation in JavaScript.</li>
+            <!-- Add more JavaScript questions here -->
+        </ul>
+        <button onclick="submitAnswer('javascript')">Submit Answer</button>
+    </div>
+
+    <div id="python" class="category">
+        <h2>Python Questions</h2>
+        <ul>
+            <li>What is a list comprehension in Python?</li>
+            <li>Explain the differences between Python 2 and Python 3.</li>
+            <!-- Add more Python questions here -->
+        </ul>
+        <button onclick="submitAnswer('python')">Submit Answer</button>
+    </div>
+
+    <!-- Add similar sections for HTML and CSS -->
+
+    <script>
+        function submitAnswer(category) {
+            // Add logic to handle answer submission
+            alert(`Answer for ${category} submitted!`);
+        }
+    </script>
+</body>
+</html>
